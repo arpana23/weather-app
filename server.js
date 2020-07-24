@@ -24,12 +24,13 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 
-app.use(favicon(_dirname + '/build/favicon.ico'));
 
 // the dirname is the current directory from where the script is running
 
 app.use(express.static(_dirname));
 app.use(express.static (path.join(_dirname, 'build')));
+app.use(favicon(_dirname + '/build/favicon.ico'));
+
 
 app.get('/ping', function (req,res) {
     return res.send('pong');
