@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 const Api = {
   key: "7ae7cbd5a269f5d1b7e018f124b268b6",
